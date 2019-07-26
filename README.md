@@ -1,1 +1,1 @@
-# template-node
+# template-koa
