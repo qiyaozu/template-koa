@@ -20,3 +20,5 @@
 ### 图片上传目录是upload目录
 
 ### 注：项目启动需要启动redis
+
+### 配置百度人脸识别：controllers -> user.js -> getScore -> param

@@ -16,7 +16,7 @@ class UserController {
 		let filePath = path.resolve(req.path);
 		let data = fs.readFileSync(filePath);
 		let imgBase64 = Buffer.from(data).toString('base64');
-		let param = `grant_type=client_credentials&client_id=h6DkRq7qijBiGjzOrgsHVagd&client_secret=GtfFbH7NaG9tulMbFoezEDISaibGTbyp`
+		let param = `grant_type=client_credentials&client_id=???&client_secret=???` // TODO 百度人脸识别
 		let token_res = await axios.get('https://aip.baidubce.com/oauth/2.0/token?' + param)
 		let access_token = token_res.data.access_token
 		let face_data = await axios.post('https://aip.baidubce.com/rest/2.0/face/v3/detect?access_token='+access_token, {
