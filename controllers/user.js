@@ -132,6 +132,12 @@ class UserController {
 			code: code
 		}
 	}
+	static test(ctx) {
+		ctx.body = {
+			code: 0,
+			success: true
+		}
+	}
 }
 
 module.exports = UserController
